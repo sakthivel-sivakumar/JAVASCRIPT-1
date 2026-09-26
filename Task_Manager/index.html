@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div>
+                <h1>Smart Task Manager</h1>
+                <p>Organize your tasks. Stay productive. Achieve your goals.</p>
+            </div>
+
+            <div class="date-time">
+                <div>Thu, 25 Sep 2025</div>
+                <div>09:30 PM</div>
+            </div>
+
+        </header>
+
+
+        <!-- Add Task -->
+        <section class="add-task">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task..."
+            >
+
+            <button id="addTaskBtn">
+                + Add Task
+            </button>
+
+        </section>
+
+
+        <!-- Filters -->
+        <section class="controls">
+
+            <div class="filters">
+
+                <button class="filter active" id="allBtn">
+                    All (0)
+                </button>
+
+                <button class="filter" id="pendingBtn">
+                    Pending (0)
+                </button>
+
+                <button class="filter" id="completedBtn">
+                    Completed (0)
+                </button>
+
+            </div>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search tasks..."
+            >
+
+        </section>
+
+
+        <!-- Task List -->
+        <section id="taskList">
+
+            
+
+        </section>
+
+
+        <!-- Summary -->
+        <section class="summary">
+
+            <div class="summary-card">
+                <h3>Total Tasks</h3>
+                <p id="totalCount">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Pending Tasks</h3>
+                <p id="pendingCount">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Completed Tasks</h3>
+                <p id="completedCount">0</p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <ul>
+        <li></li>
+    </ul>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
